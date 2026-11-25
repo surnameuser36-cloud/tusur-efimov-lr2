@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: tusur-efimov-lr2-medical-service
+    runtime: python
+    plan: free
+    rootDir: Lab2
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT main:app
+    healthCheckPath: /health

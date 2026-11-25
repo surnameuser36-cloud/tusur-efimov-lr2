@@ -1,0 +1,4 @@
+flask
+flask-restx
+Werkzeug
+gunicorn
